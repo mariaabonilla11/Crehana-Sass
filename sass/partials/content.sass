@@ -1,0 +1,146 @@
+.main 
+    //Portada
+    .portada
+        background-image: url('../img/bg-portada.jpg')
+        background-position: top
+        background-size: cover
+        background-attachment: fixed
+        padding: 0
+
+        .portada-inner
+            padding: 29rem 0
+            text-align: center
+
+            h1 
+                font-size: 5rem
+                text-transform: uppercase
+                line-height: 5rem
+                margin-bottom: 1rem
+                color: $color-primary
+
+            p
+                font-size: 2rem
+                margin-bottom: 1rem
+                @include font-light()
+
+    //Servicios
+    .servicios
+        padding-top: 12rem
+        padding-bottom: 0
+        .container
+            padding-bottom: 9rem
+            border-bottom: 1px solid $color-border
+        .blurbs-container
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 7rem
+
+            .blurb
+                width: 24%
+                text-align: center
+
+                .icon-container
+                    margin-bottom: 2rem
+                    i
+                        font-size: 6rem
+                        color: $color-primary
+
+                .blurb-text-container
+                    h3 
+                        font-size: 2rem
+                        line-height: 2rem
+                        margin-bottom: 1rem
+                        color: $color-primary
+                    p
+                        font-size: 1.3rem
+                        line-height: 2.5rem
+                        color: $color-text-regular
+
+    //Galeria
+    .galeria
+        padding-bottom: 0
+
+        .images-container
+            display: flex
+            flex-wrap: wrap
+            margin-top: 7rem
+
+            .image
+                width: 33.33%
+                position: relative
+
+                .overlay
+                    opacity: 0
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba($color-primary, 0.8)
+                    -webkit-transition: all 0.5s ease
+                    -o-transition: all 0.5s ease
+                    transition: all 0.5s ease 
+            
+                &:hover
+                    .overlay
+                        opacity: 1
+
+                    .image-info
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        text-align: center
+
+                        h3
+                            color: $color-white
+                            font-size: 2rem
+                            margin-bottom: 0.5rem
+
+                        p
+                            color: $color-white
+                            font-size: 1.2rem
+
+    //Llamada a la acción
+    .call-to-action
+        background: $color-primary
+
+        .section-title
+            color: $color-white
+            @include font-light()
+            
+        .btn-container
+            margin-top: 4rem
+            text-align: center
+
+    //Testimonios             
+    .testimonios
+        background: rgba($color-primary, 0.02)
+
+        .testimonios-container
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            margin-top: 7rem
+
+            .testimonio
+                text-align: center
+                background: $color-white
+                padding: 4.5rem 3rem
+                width: 26%
+                box-shadow: 1px 3px 3px rgba($color-primary,0.08)
+                transition: all 0.3s ease
+
+                .img-container
+                    margin-bottom: 2rem
+
+                    img
+                        -webkit-border-radius: 50%
+                        -moz-border-radius: 50%
+                        -ms-border-radius: 50%
+                        -o-border-radius: 50%
+                        border-radius: 50%
+
+
+
