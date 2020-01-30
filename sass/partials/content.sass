@@ -55,6 +55,12 @@
                 width: 24%
                 text-align: center
 
+                @include mobile
+                    width: 100%
+                    margin-bottom: 6rem
+                    &:last-child
+                        margin-bottom: 0
+                
                 .icon-container
                     margin-bottom: 2rem
                     i
@@ -84,6 +90,13 @@
             .image
                 width: 33.33%
                 position: relative
+
+                @include tablet
+                    width: 50%
+
+                @include mobile 
+                    width: 100%
+
 
                 .overlay
                     opacity: 0
@@ -147,6 +160,10 @@
                 box-shadow: 1px 3px 3px rgba($color-primary,0.08)
                 transition: all 0.3s ease
 
+                @include tablet
+                    width: 100%
+                    margin-bottom: 3rem
+
                 &:hover
                     box-shadow: 2px 4px 15px 5px rgba($color-primary, 0.08)
 
@@ -181,7 +198,7 @@
                             color: $color-text-light
                             font-size: 1.2rem 
 
-    //COntacto
+    //Contacto
     .contacto
         padding-bottom: 0
 
@@ -200,6 +217,10 @@
                 padding: 7rem
                 background: $color-white
 
+                @include mobile
+                    padding-left: 2rem
+                    padding-right: 2rem
+
                 .contact-info-container-inner-row
                     display: flex
                     flex-wrap: wrap
@@ -211,6 +232,9 @@
                     .contact-info-item
                         width: 50%
                         padding-left: 3rem
+
+                        @include mobile
+                            padding-left: 2rem
 
                         h4
                             text-transform: uppercase

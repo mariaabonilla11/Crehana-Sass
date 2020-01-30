@@ -93,6 +93,12 @@ header {
     .main .servicios .blurbs-container .blurb {
       width: 24%;
       text-align: center; }
+      @media screen and (max-width: 400px) {
+        .main .servicios .blurbs-container .blurb {
+          width: 100%;
+          margin-bottom: 6rem; }
+          .main .servicios .blurbs-container .blurb:last-child {
+            margin-bottom: 0; } }
       .main .servicios .blurbs-container .blurb .icon-container {
         margin-bottom: 2rem; }
         .main .servicios .blurbs-container .blurb .icon-container i {
@@ -116,6 +122,12 @@ header {
     .main .galeria .images-container .image {
       width: 33.33%;
       position: relative; }
+      @media screen and (max-width: 767px) {
+        .main .galeria .images-container .image {
+          width: 50%; } }
+      @media screen and (max-width: 400px) {
+        .main .galeria .images-container .image {
+          width: 100%; } }
       .main .galeria .images-container .image .overlay {
         opacity: 0;
         position: absolute;
@@ -165,6 +177,10 @@ header {
       width: 26%;
       box-shadow: 1px 3px 3px rgba(25, 25, 25, 0.08);
       transition: all 0.3s ease; }
+      @media screen and (max-width: 767px) {
+        .main .testimonios .testimonios-container .testimonio {
+          width: 100%;
+          margin-bottom: 3rem; } }
       .main .testimonios .testimonios-container .testimonio:hover {
         box-shadow: 2px 4px 15px 5px rgba(25, 25, 25, 0.08); }
       .main .testimonios .testimonios-container .testimonio .img-container {
@@ -207,6 +223,10 @@ header {
       box-shadow: 1px 3px 3px rgba(25, 25, 25, 0.08);
       padding: 7rem;
       background: #fff; }
+      @media screen and (max-width: 400px) {
+        .main .contacto .contact-info-section .contact-info-container {
+          padding-left: 2rem;
+          padding-right: 2rem; } }
       .main .contacto .contact-info-section .contact-info-container .contact-info-container-inner-row {
         display: flex;
         flex-wrap: wrap;
@@ -216,6 +236,9 @@ header {
         .main .contacto .contact-info-section .contact-info-container .contact-info-container-inner-row .contact-info-item {
           width: 50%;
           padding-left: 3rem; }
+          @media screen and (max-width: 400px) {
+            .main .contacto .contact-info-section .contact-info-container .contact-info-container-inner-row .contact-info-item {
+              padding-left: 2rem; } }
           .main .contacto .contact-info-section .contact-info-container .contact-info-container-inner-row .contact-info-item h4 {
             text-transform: uppercase;
             font-size: 1.2rem;
@@ -298,6 +321,9 @@ body, html {
     color: #191919;
     line-height: 3.1rem;
     margin-bottom: 1rem; }
+    @media screen and (max-width: 400px) {
+      .section-title-container h2 {
+        font-size: 2.1rem; } }
   .section-title-container p {
     font-size: 1.6rem;
     color: #9b9b9b;
