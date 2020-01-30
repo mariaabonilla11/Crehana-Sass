@@ -1,4 +1,7 @@
 .main 
+    @include mobile
+        margin-top: 11.8rem
+
     //Portada
     .portada
         background-image: url('../img/bg-portada.jpg')
@@ -11,6 +14,9 @@
             padding: 29rem 0
             text-align: center
 
+            @include mobile
+                padding: 20rem 0
+
             h1 
                 font-size: 5rem
                 text-transform: uppercase
@@ -18,10 +24,19 @@
                 margin-bottom: 1rem
                 color: $color-primary
 
+            @include mobile
+                font-size: 3rem
+                line-height: 3rem
+                margin-bottom: 2rem
+
             p
                 font-size: 2rem
                 margin-bottom: 1rem
                 @include font-light()
+
+                @include mobile
+                    font-size: 1.6rem
+                    margin-bottom: 2rem
 
     //Servicios
     .servicios
@@ -132,6 +147,9 @@
                 box-shadow: 1px 3px 3px rgba($color-primary,0.08)
                 transition: all 0.3s ease
 
+                &:hover
+                    box-shadow: 2px 4px 15px 5px rgba($color-primary, 0.08)
+
                 .img-container
                     margin-bottom: 2rem
 
@@ -141,6 +159,76 @@
                         -ms-border-radius: 50%
                         -o-border-radius: 50%
                         border-radius: 50%
+
+                    p
+                        color: $color-text-regular
+                        font-size: 1.4rem
+                        @include font-light()
+
+                        &.testimonio-texto
+                            &:after 
+                                content: ''
+                                display: bloxk
+                                width: 50%
+                                height: 1px
+                                background: $color-border
+                                margin: 4rem auto
+
+                        &.testimonio-nombre
+                            color: $color-primary
+                        
+                        &.testimonio-empresa
+                            color: $color-text-light
+                            font-size: 1.2rem 
+
+    //COntacto
+    .contacto
+        padding-bottom: 0
+
+        .contact-info-section
+            margin-top: 7rem
+            padding: 9rem 0
+            background-image: url('../img/bg-portada.jpg')
+            background-attachment: fixed
+            background-size: cover
+
+            .contact-info-container
+                width: 90%
+                max-width: 76rem
+                margin: 0 auto
+                box-shadow: 1px 3px 3px rgba($color-primary, 0.08)
+                padding: 7rem
+                background: $color-white
+
+                .contact-info-container-inner-row
+                    display: flex
+                    flex-wrap: wrap
+                    margin-bottom: 5rem
+
+                    &:last-child
+                        margin-bottom: 0
+
+                    .contact-info-item
+                        width: 50%
+                        padding-left: 3rem
+
+                        h4
+                            text-transform: uppercase
+                            font-size: 1.2rem
+                            color: $color-primary
+                            @include font-regular()
+
+                        p
+                            font-size: 1.2rem
+                            color: $color-text-regular
+                            @include font-light()
+                            line-height: 2.1rem
+
+
+
+
+
+        
 
 
 
