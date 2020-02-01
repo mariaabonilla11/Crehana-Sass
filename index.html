@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="mainHeader">  
         <div class="container">
             <div class="menu-bar">
                 <a href="#" class="logo-container">
@@ -20,11 +20,11 @@
 
                 <nav class="main-menu-container">
                     <ul class="main-menu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Qué ofrecemos</a></li>
-                        <li><a href="#">Galería</a></li>
-                        <li><a href="#">Testimonios</a></li>
-                        <li><a href="#">Contacto</a></li>                     
+                        <li><a class="smoothScroll" href="#portada">Inicio</a></li>
+                        <li><a class="smoothScroll" href="#servicios">Qué ofrecemos</a></li>
+                        <li><a class="smoothScroll" href="#galeria">Galería</a></li>
+                        <li><a class="smoothScroll" href="#testimonios">Testimonios</a></li>
+                        <li><a class="smoothScroll" href="#contacto">Contacto</a></li>                     
                     </ul>
                 </nav>
             </div>
@@ -259,5 +259,8 @@
     <footer>
         <p>Todos los derechos reservados (C) </p>
     </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
